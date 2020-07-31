@@ -520,7 +520,8 @@ label span {
 .sobre ul {
     background-color: #fff;
     border-radius: 20px;
-    padding: 20px 20px 100px;
+    padding: 20px;
+    margin-botton:100px;
 }
 
 .sobre li {
