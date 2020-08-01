@@ -147,7 +147,7 @@ i.show_menu {
     font-size: 2.5rem;
     text-shadow: 4px 4px 4px black;
     font-family: 'New Rocker', cursive;
-    padding-top: 50px;
+   margin-top: 30px;
 }
 
 .slide_img p {
@@ -162,6 +162,7 @@ i.show_menu {
 #preciso {
     font-size: 2rem;
     padding: 0;
+    margin-bottom: 70px;
 }
 
 .slide_img a {
@@ -230,7 +231,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 4%;
+    bottom: 12%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -502,7 +503,7 @@ label span {
 
 /*página Sobre*/
 .sobrebody {
-    background-image: url(../imagens/floresta2.jpg);
+    background-image: url(../imagens/mar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -516,6 +517,7 @@ label span {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    color:#fff;
 
 }
 
@@ -526,21 +528,23 @@ label span {
     font-size: 1.5rem;
     font-family: 'Caesar Dressing', cursive, sans-serif;
     padding: 20px;
-    color: #085BA9;
+    color: #fff;
     text-shadow: 2px 2px 2px black;
 }
 
 .sobre p {
     line-height: 1.5rem;
-    background-color: #fff;
+    background-color: #2f6468;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 4px 4px 6px black;
 }
 
 .sobre ul {
-    background-color: #fff;
+    background-color: #2f6468;;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 4px 4px 6px black;
 }
 
 .sobre li {
