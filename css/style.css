@@ -21,7 +21,7 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #29B0F6;
+    background-color: #1859A9;
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +75,7 @@ i.show_menu {
         top: 47px;
         left: -100vw;
         text-align: center;
-        background-color: #29B0F6;
+        background-color: #1859A9;
         transition: 0.6s;
     }
 
@@ -134,7 +134,7 @@ i.show_menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     background-size: cover;
     background-position: center center;
@@ -147,7 +147,7 @@ i.show_menu {
     font-size: 2.5rem;
     text-shadow: 4px 4px 4px black;
     font-family: 'New Rocker', cursive;
-
+    padding-top: 50px;
 }
 
 .slide_img p {
@@ -159,13 +159,13 @@ i.show_menu {
     max-width: 800px;
 }
 
-.slide_img p:last-of-type {
-    font-size: 2.5rem;
+#preciso {
+    font-size: 2rem;
     padding: 0;
 }
 
 .slide_img a {
-    background-color: #29B0F6;
+    background-color: #1859A9;
     display: block;
     color: #fff;
     padding: 10px 30px;
@@ -186,7 +186,11 @@ i.show_menu {
 }
 
 .cover2 {
-    background: linear-gradient(#4c3009, #d3a864);
+    background-image: url(../imagens/leao.jpg);
+}
+
+.cover3 {
+    background: url(../imagens/coracao.jpg);
 }
 
 .prev,
@@ -226,7 +230,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 12%;
+    bottom: 4%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -257,13 +261,15 @@ label span {
 }
 
 #i1:checked ~ #one,
-#i2:checked ~ #two {
+#i2:checked ~ #two,
+#i3:checked ~ #three {
     z-index: 9;
     animation: scroll 1s ease-in-out;
 }
 
 #i1:checked ~ #nav_slide #dot1,
-#i2:checked ~ #nav_slide #dot2 {
+#i2:checked ~ #nav_slide #dot2,
+#i3:checked ~ #nav_slide #dot3 {
     background-color: rgba(255, 255, 255, .9);
 }
 
@@ -293,11 +299,6 @@ label span {
         padding: 0 8px;
     }
 
-    .slide_img p:last-of-type {
-        font-size: 2rem;
-        padding: 0;
-    }
-
     label span {
         font-size: 50pt;
     }
@@ -323,7 +324,7 @@ label span {
 /*footer*/
 #rodape {
     width: 100%;
-    background-color: #29B0F6;
+    background-color: #1859A9;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -511,7 +512,6 @@ label span {
 .sobre {
     max-width: 960px;
     margin: 100px auto 20px;
-    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -566,14 +566,14 @@ label span {
 .acoes h3 {
     padding: 10px;
     font-family: 'Caesar Dressing', cursive, sans-serif;
-    color: #29B0F6;
+    color: black;
     font-size: 1.6rem;
-    text-shadow: 3px 3px 3px black;
     align-self: flex-start;
 }
 
 .acoes p {
     line-height: 1.8rem;
+    color: #fff;
 }
 
 .cadeira-roda,
@@ -581,7 +581,7 @@ label span {
 .sopao {
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #2f6468;
     margin: 15px 0;
     box-shadow: 5px 5px 7px black;
 }
@@ -606,7 +606,7 @@ label span {
 
     .cadeira-roda,
     .casa,
-    .sopao{
+    .sopao {
         flex-direction: column;
     }
 
@@ -621,10 +621,11 @@ label span {
 
     }
 
-    .acoes h1, .acoes h2, .acoes h3 {
+    .acoes h1,
+    .acoes h2,
+    .acoes h3 {
         padding: 10px;
         font-family: 'Caesar Dressing', cursive, sans-serif;
-        color: #29B0F6;
         font-size: 1.2rem;
 
     }

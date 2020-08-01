@@ -9,7 +9,7 @@ onload  = start;
 function start(){	
 var i = 1;
 function Move(){ 	
-	i = (i%2)+1; // 2 is the Number of image in slider
+	i = (i%3)+1; // 3 is the Number of image in slider
 	document.getElementById('i'+i).checked = true;
 }
 setInterval(Move,20000); //change img in 15 sec
