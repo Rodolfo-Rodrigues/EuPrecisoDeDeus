@@ -159,26 +159,31 @@ i.show_menu {
     max-width: 800px;
 }
 
-
-#preciso {
-    font-size: 2.5rem;
-    padding: 0;
-    margin-bottom: 70px;
+.cover1 h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 6rem;
 }
 
-.pensamentos{
+#preciso {
+    font-size: 6rem;
+    padding: 0;
+    margin-bottom: 70px;
+    font-family: 'Londrina Outline', cursive;
+}
+
+.pensamentos {
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color:#1859A9;
+    color: #1859A9;
     background-color: #fff;
     border-radius: 20px;
     padding: 10px;
     box-shadow: 3px 3px 6px black;
 }
 
-.pensamentos p{
+.pensamentos p {
     text-shadow: 1px 1px 1px black;
 }
 
@@ -210,6 +215,23 @@ i.show_menu {
 .cover3 {
     background: url(../imagens/coracao.jpg);
 }
+
+.cover3 h1 {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    text-align: left;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 4rem;
+    padding-left: 10px;
+}
+
+.cover3 .hash {
+    font-size: 10rem;
+    font-family: 'Londrina Outline', cursive;
+
+}
+
 
 .prev,
 .next {
@@ -308,8 +330,12 @@ label span {
     }
 
     .slide_img h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 50px;
+    }
+
+    .cover1 h1 {
+        font-size: 3rem;
     }
 
     .slide_img p {
@@ -330,13 +356,17 @@ label span {
         width: 12px;
         height: 12px;
     }
+
     #preciso {
-    font-size: 1.5rem;
+        font-size: 3rem;
     }
 
-    .pensamentos{
+    .pensamentos {
         width: 90%;
         margin: auto;
+    }
+    .cover3 .hash {
+        font-size: 6rem;
     }
 }
 
