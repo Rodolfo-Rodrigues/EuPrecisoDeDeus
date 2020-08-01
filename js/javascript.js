@@ -14,4 +14,3 @@ function Move(){
 }
 setInterval(Move,20000); //change img in 15 sec
 }
-

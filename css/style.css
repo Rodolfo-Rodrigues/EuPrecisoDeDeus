@@ -147,7 +147,7 @@ i.show_menu {
     font-size: 2.5rem;
     text-shadow: 4px 4px 4px black;
     font-family: 'New Rocker', cursive;
-   margin-top: 30px;
+    margin-top: 30px;
 }
 
 .slide_img p {
@@ -159,10 +159,27 @@ i.show_menu {
     max-width: 800px;
 }
 
+
 #preciso {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 0;
     margin-bottom: 70px;
+}
+
+.pensamentos{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#1859A9;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px black;
+}
+
+.pensamentos p{
+    text-shadow: 1px 1px 1px black;
 }
 
 .slide_img a {
@@ -187,7 +204,7 @@ i.show_menu {
 }
 
 .cover2 {
-    background-image: url(../imagens/leao.jpg);
+    background-color: #aebf32;
 }
 
 .cover3 {
@@ -231,7 +248,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 12%;
+    bottom: 10%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -313,14 +330,15 @@ label span {
         width: 12px;
         height: 12px;
     }
-}
+    #preciso {
+    font-size: 1.5rem;
+    }
 
-@media screen and(min-width: 970px) {
-    .me {
-        display: none;
+    .pensamentos{
+        width: 90%;
+        margin: auto;
     }
 }
-
 
 /*footer*/
 #rodape {
@@ -354,8 +372,10 @@ label span {
 /*______________________________________________________________________________________________________________*/
 /*pagina causas sociais*/
 .causasSociais {
-    background-image: url(../imagens/Jesus.jpg);
-    /*capa*/
+    background-image: url(../imagens/Jesus.jpg)
+        /*capa*/
+    ;
+
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,8 +390,6 @@ label span {
     overflow: hidden;
     color: #fff;
 }
-
-
 
 .causasSociais h1 {
     font-size: 4rem;
@@ -508,6 +526,7 @@ label span {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .sobre {
@@ -517,7 +536,7 @@ label span {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    color:#fff;
+    color: #fff;
 
 }
 
@@ -541,7 +560,8 @@ label span {
 }
 
 .sobre ul {
-    background-color: #2f6468;;
+    background-color: #2f6468;
+    ;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 4px 4px 6px black;
@@ -555,6 +575,15 @@ label span {
 }
 
 /*página ações*/
+.acoes-body {
+    background-image: url(../imagens/textura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
 .acoes {
     display: flex;
     flex-direction: column;
