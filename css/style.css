@@ -164,7 +164,7 @@ i.show_menu {
     align-items: center;
     -ms-flex-pack: distribute;
     -webkit-box-pack: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     background-size: cover;
     background-position: center center;
@@ -180,6 +180,15 @@ i.show_menu {
     margin-top: 100px;
 }
 
+.cover1 h1{
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bolder;
+     text-shadow: 1px 1px 2px black;
+}
+
 .slide_img p {
     font-size: 1.5rem;
     text-shadow: 4px 4px 3px black;
@@ -187,22 +196,15 @@ i.show_menu {
     margin: 5px 10px;
     max-width: 800px;
 }
-
-.cover1 h1 {
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
+    
 #preciso {
     font-size: 8rem;
     padding: 0;
     margin: 0;
     font-family: 'Londrina Outline', cursive;
     text-align: center;
-
-
+    font-weight: 500;
+    line-height: 6rem;
 }
 
 .pensamentos {
@@ -238,9 +240,8 @@ i.show_menu {
     padding: 10px 30px;
     text-transform: uppercase;
     border-radius: 10px;
-    margin-top: 80px;
-    margin-bottom: 80px;
     font-weight: bold;
+    margin-bottom: 10rem;
 }
 
 .slide_img a:hover {
@@ -254,7 +255,9 @@ i.show_menu {
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
+    font-size: 1.5rem;
 }
+
 
 .cover2 {
     background-color: #aebf32;
@@ -263,6 +266,7 @@ i.show_menu {
 
 .cover3 {
     background: url(../imagens/coracao.jpg);
+    background-color: #aebf32;
 }
 
 .cover3 h1 {
@@ -273,15 +277,15 @@ i.show_menu {
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
-    font-family: arial;
+    font-family: arial, sans-serif;
     font-size: 4rem;
-
 }
 
 .cover3 .hash {
-    font-size: 12rem;
+    font-size: 23rem;
     font-family: 'Londrina Outline', cursive;
-
+    font-weight: 100;
+    text-shadow: none; 
 }
 
 
@@ -325,7 +329,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 10%;
+    bottom: 6%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -403,13 +407,16 @@ label span {
     }
 
     .cover1 h1 {
-        font-size: 1rem;
-        padding: 20px;
+        font-size: 1.2rem;
     }
 
     .slide_img p {
         font-size: 1rem;
         padding: 0 8px;
+    }
+    
+    .slide_img a{
+        margin: 50px;
     }
 
     label span {
@@ -428,15 +435,17 @@ label span {
 
     #preciso {
         font-size: 4rem;
+        margin-bottom: 3rem;
     }
 
     .pensamentos {
         width: 90%;
         margin: auto;
+        background-color: #D7D7D7;
     }
 
     .cover3 .hash {
-        font-size: 6rem;
+        font-size: 10rem;
     }
 }
 
@@ -645,7 +654,7 @@ label span {
 
 .causasSociaisImg h2 {
     font-size: 2rem;
-    font-family: 'Caesar Dressing', cursive, sans-serif;
+    font-family: Arial, sans-serif;
     padding: 20px;
     color: #085BA9;
 }
@@ -656,8 +665,9 @@ label span {
     right: 0;
     background: #085BA9;
     color: #fff;
-    padding: 5px 10px;
+    padding: 5px;
     border-radius: 0 0 15px 0;
+    font-size: 0.9rem;
 }
 
 @media (max-width:768px) {
@@ -692,7 +702,7 @@ label span {
     align-items: center;
     padding: 20px;
     color: #fff;
-
+    font-family: arial, sans-serif;
 }
 
 .sobre h1,
@@ -700,7 +710,6 @@ label span {
 .sobre h3,
 .sobre h4 {
     font-size: 1.5rem;
-    font-family: arial, sans-serif;
     padding: 20px;
     color: #fff;
     text-shadow: -1px -1px 0 #000,
@@ -716,11 +725,17 @@ label span {
     border-radius: 20px;
     -webkit-box-shadow: 4px 4px 6px black;
     box-shadow: 4px 4px 6px black;
+    line-height: 2rem;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    word-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .sobre ul {
     background-color: #2f6468;
-    ;
     border-radius: 20px;
     padding: 20px;
     -webkit-box-shadow: 4px 4px 6px black;
@@ -728,10 +743,15 @@ label span {
 }
 
 .sobre li {
-    padding: 5px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     list-style-type: disc;
     list-style-position: inside;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    word-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /*página ações*/
@@ -765,7 +785,7 @@ label span {
 .acoes h2,
 .acoes h3 {
     padding: 10px;
-    font-family: cursive, sans-serif;
+    font-family: arial, sans-serif;
     color: white;
     font-size: 1.6rem;
     -ms-flex-item-align: start;
@@ -842,8 +862,6 @@ label span {
     .acoes h2,
     .acoes h3 {
         padding: 10px;
-        font-family: 'Caesar Dressing', cursive, sans-serif;
         font-size: 1.2rem;
-
     }
 }
