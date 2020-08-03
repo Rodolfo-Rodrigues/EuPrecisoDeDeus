@@ -74,7 +74,7 @@ i.show_menu {
 }
 
 
-@media screen and (max-width:871px) {
+@media screen and (max-width:896px) {
     #cabecalho {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -173,6 +173,50 @@ i.show_menu {
     overflow: hidden;
 }
 
+.doacoes {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1859A9;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+}
+
+.doacoes i {
+    font-size: 2rem;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.doacoes a {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .doacoes {
+        font-size: 0.8rem;
+        top: 2%;
+    }
+
+    .doacoes i {
+        font-size: 1.1rem;
+    }
+    
+}
+
 .slide_img h1 {
     font-size: 2.5rem;
     text-shadow: 4px 4px 4px black;
@@ -237,7 +281,7 @@ i.show_menu {
     font-size: 1.3rem;
 }
 
-.slide_img a {
+.saiba-mais {
     background-color: #1859A9;
     display: block;
     color: #fff;
@@ -245,7 +289,7 @@ i.show_menu {
     text-transform: uppercase;
     border-radius: 10px;
     font-weight: bold;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .slide_img a:hover {
@@ -330,7 +374,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 10%;
+    bottom: 6%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -408,7 +452,7 @@ label span {
     }
 
     .cover1 h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .slide_img p {
@@ -435,16 +479,16 @@ label span {
     }
 
     #preciso {
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-bottom: 5rem;
         line-height: 2.5rem;
     }
 
     .pensamentos {
         width: 90%;
-        margin:  auto;
+        margin: auto;
         background-color: #D7D7D7;
-        
+
     }
 
     .cover3 .hash {
@@ -479,7 +523,7 @@ label span {
 
 #rodape p {
     color: #fff;
-margin:0 0 15px 0;
+    margin: 0 0 15px 0;
 }
 
 #rodape a {
@@ -496,7 +540,7 @@ margin:0 0 15px 0;
     background-image: url(../imagens/Jesus.jpg)
         /*capa*/
     ;
-
+    background-color: #FFD477;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -529,7 +573,7 @@ margin:0 0 15px 0;
 .causasSociais p {
     font-size: 2rem;
     text-shadow: 4px 4px 4px black;
-    font-family: 'New Rocker', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
     width: 800px;
 }
 
@@ -547,17 +591,15 @@ margin:0 0 15px 0;
     padding: 30px 20px;
     max-width: 1200px;
     margin: 20px auto;
-    -webkit-box-shadow: 4px 4px 6px gray;
-    box-shadow: 4px 4px 6px gray;
-    border: 5px solid gray;
-    border-radius: 50px;
+    border-radius: 10px;
+    border: 5px solid brown;
     background-color: #FFD477;
 }
 
 .Matheus25 h2 {
     font-size: 2rem;
     color: #085BA9;
-    font-family: 'Caesar Dressing', cursive, sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -571,6 +613,10 @@ margin:0 0 15px 0;
 .versiculos ul {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+}
+
+.versiculos .border-left {
+    border-right: 2px solid brown;
 }
 
 .versiculos ul li {
@@ -600,6 +646,10 @@ margin:0 0 15px 0;
         margin: 10px;
     }
 
+    .Matheus25 h2 {
+        font-size: 1.5rem;
+    }
+
     .versiculos {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -610,6 +660,15 @@ margin:0 0 15px 0;
     .versiculos ul {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+        border-left: none;
+    }
+
+    .versiculos .border-left {
+        border-right: none;
+    }
+
+    .versiculos ul li {
+        padding: 10px 0;
     }
 }
 
@@ -769,7 +828,7 @@ margin:0 0 15px 0;
     -ms-flex-align: center;
     align-items: center;
     margin-top: 100px;
-    /*text-align: justify; */
+    padding-bottom: 30px;
 }
 
 .acoes h1,
@@ -816,8 +875,8 @@ margin:0 0 15px 0;
 .acoes p,
 .acoes img {
     width: 50%;
-    margin: 10px;
-    padding: 15px;
+    margin: 5px;
+    padding: 10px;
 }
 
 @media screen and (max-width:768px) {
@@ -845,7 +904,7 @@ margin:0 0 15px 0;
     .acoes p,
     .acoes img {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
 
     }
 
