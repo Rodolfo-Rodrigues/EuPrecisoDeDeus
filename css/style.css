@@ -188,6 +188,7 @@ i.show_menu {
     font-weight: bolder;
     text-shadow: 1px 1px 2px black;
     line-height: 2rem;
+    text-transform: uppercase;
 }
 
 .slide_img p {
@@ -207,6 +208,7 @@ i.show_menu {
     line-height: 3rem;
     text-shadow: none;
     background-color: #1859A9;
+    text-transform: uppercase;
 }
 
 .pensamentos {
@@ -440,7 +442,6 @@ label span {
         font-size: 2.2rem;
         margin-bottom: 5rem;
         line-height: 2.5rem;
-        text-shadow: 2px 2px 2px black;
     }
 
     .pensamentos {
