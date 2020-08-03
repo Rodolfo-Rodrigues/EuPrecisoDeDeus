@@ -330,7 +330,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 6%;
+    bottom: 10%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -396,7 +396,7 @@ label span {
     }
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 768px) {
     .container {
         border: none;
         width: 100%;
@@ -405,10 +405,6 @@ label span {
     .slide_img h1 {
         font-size: 2rem;
         margin-top: 50px;
-    }
-
-    .cover {
-        background-position: 25% 75%;
     }
 
     .cover1 h1 {
@@ -446,8 +442,9 @@ label span {
 
     .pensamentos {
         width: 90%;
-        margin: auto;
+        margin:  auto;
         background-color: #D7D7D7;
+        
     }
 
     .cover3 .hash {
@@ -477,11 +474,12 @@ label span {
 
 #rodape h2 {
     color: #fff;
-    margin: 5px;
+    margin: 15px 0;
 }
 
 #rodape p {
     color: #fff;
+margin:0 0 15px 0;
 }
 
 #rodape a {
@@ -725,19 +723,12 @@ label span {
 }
 
 .sobre p {
-    line-height: 1.5rem;
     background-color: #2f6468;
     padding: 20px;
     border-radius: 20px;
     -webkit-box-shadow: 4px 4px 6px black;
     box-shadow: 4px 4px 6px black;
-    line-height: 2rem;
-    text-shadow: -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    word-spacing: 3px;
-    letter-spacing: 2px;
+    line-height: 2.2rem;
 }
 
 .sobre ul {
@@ -749,15 +740,9 @@ label span {
 }
 
 .sobre li {
-    line-height: 2rem;
+    line-height: 2.5rem;
     list-style-type: disc;
     list-style-position: inside;
-    text-shadow: -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    word-spacing: 3px;
-    letter-spacing: 2px;
 }
 
 /*página ações*/
@@ -784,7 +769,7 @@ label span {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 100px;
-    text-align: justify;
+    /*text-align: justify; */
 }
 
 .acoes h1,
