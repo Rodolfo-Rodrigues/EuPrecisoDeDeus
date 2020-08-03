@@ -192,7 +192,7 @@ i.show_menu {
     border-radius: 20px;
     font-weight: bold;
     position: absolute;
-    top: 15%;
+    top: 10%;
 }
 
 .doacoes i {
@@ -208,7 +208,7 @@ i.show_menu {
 @media screen and (max-width:768px) {
     .doacoes {
         font-size: 0.8rem;
-        top: 2%;
+        top: 18%;
     }
 
     .doacoes i {
@@ -459,8 +459,8 @@ label span {
         padding: 0 8px;
     }
 
-    .slide_img a {
-        margin: 50px;
+    .saiba-mais  {
+        margin: 0 0 50px;
     }
 
     label span {
