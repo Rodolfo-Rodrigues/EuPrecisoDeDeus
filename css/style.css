@@ -1,19 +1,20 @@
-/*CSS Reset*/
+/*CSS reset*/
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 100%;
-    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial, sans-serif;
     scroll-behavior: smooth;
 }
 
 img {
     max-width: 100%;
 }
+
 
 /*header*/
 #cabecalho {
@@ -127,12 +128,10 @@ i.show_menu {
     }
 }
 
-/*Slider */
+/*slider*/
 #i1,
 #i2,
-#i3,
-#i4,
-#i5 {
+#i3 {
     display: none;
 }
 
@@ -146,12 +145,13 @@ i.show_menu {
     -ms-user-select: none;
     user-select: none;
     background-color: #1c1c1c;
+    overflow: hidden;
 }
 
 .container .slide_img {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162,176 +162,197 @@ i.show_menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #fff;
     overflow: hidden;
-}
-
-.doacoes {
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #1859A9;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 10%;
-}
-
-.doacoes i {
-    font-size: 2rem;
-    color: #fff;
-    padding: 5px 10px;
-}
-
-.doacoes a {
-    display: block;
-}
-
-@media screen and (max-width:768px) {
-    .doacoes {
-        font-size: 0.8rem;
-        top: 18%;
-    }
-
-    .doacoes i {
-        font-size: 1.1rem;
-    }
-}
-
-.slide_img h1 {
-    font-size: 2.5rem;
-    text-shadow: 4px 4px 4px black;
-    font-family: 'New Rocker', cursive;
-    margin-top: 100px;
-}
-
-.cover1 h1 {
-    font-family: 'Merriweather Sans', sans-serif;
-    padding: 0;
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bolder;
-    text-shadow: 2px 2px 3px black;
-    line-height: 2rem;
-    text-transform: uppercase;
-}
-
-.slide_img p {
-    font-size: 1.5rem;
-    text-shadow: 4px 4px 3px black;
-    font-family: 'New Rocker', cursive;
-    margin: 5px 10px;
-    max-width: 800px;
-}
-
-#preciso {
-    font-size: 4rem;
-    padding: 15px;
-    font-family: 'Merriweather Sans', sans-serif;
-    text-align: center;
-    font-weight: 500;
-    line-height: 3rem;
-    text-shadow: none;
-    background-color: #1859A9;
-    text-transform: uppercase;
-}
-
-.pensamentos {
-    height: 70vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    color: black;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 10px;
-    -webkit-box-shadow: 3px 3px 6px black;
-    box-shadow: 3px 3px 6px black;
-}
-
-.pensamentos p {
-    font-family: sans-serif;
-    text-shadow: none;
-    font-size: 1.3rem;
-}
-
-.saiba-mais {
-    background-color: #1859A9;
-    display: block;
-    color: #fff;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-bottom: 15rem;
-}
-
-.slide_img a:hover {
-    color: gray;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
 }
 
 .cover1 {
     background-image: url(../imagens/montanha2.jpg);
-    background-color: #6f4310;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+.cover1 h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.4rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cover1 p {
+    font-size: 5rem;
+    background-color: #1859A9;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 2px;
+}
+
+.cover1 a {
+    display: block;
+}
+
+.cover1 a:hover {
+    color: gray;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.doacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #1859A9;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.doacao i {
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+}
 
 .cover2 {
-    background-color: #aebf32;
     background-image: url(../imagens/textura-verde.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.pensamentos {
+    background-color: #fff;
+    max-width: 920px;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 5px solid brown;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.cover2 p {
+    font-size: 1.1rem;
+    font-family: arial;
+    margin: 15px 0;
+
 }
 
 .cover3 {
-    background: url(../imagens/coracao.jpg);
-    background-color: #aebf32;
+    background-image: url(../imagens/coracao.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .cover3 h1 {
+    font-size: 4rem;
+    text-align: left;
+    color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    text-align: left;
-    font-family: arial, sans-serif;
-    font-size: 4rem;
 }
 
 .cover3 .hash {
-    font-size: 23rem;
+    font-size: 19rem;
     font-family: 'Londrina Outline', cursive;
     font-weight: 100;
-    text-shadow: none;
+    padding: 0 5px;
 }
 
+.cover3 a {
+    background-color: #1859A9;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.cover3 a:hover {
+    color: gray;
+    -webkit-transition: all .6s ease-out;
+    transition: all .6s ease-out;
+}
+
+@media screen and (max-width:768px) {
+    .cover1 h1 {
+        font-size: 2rem;
+    }
+
+    .cover1 p {
+        font-size: 4rem;
+    }
+
+    .cover3 h1 {
+        font-size: 3rem;
+    }
+
+    .cover3 .hash {
+        font-size: 15rem;
+    }
+
+    .cover2 p {
+        font-size: 0.8rem;
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .cover1 h1 {
+        font-size: 1rem;
+    }
+
+    .cover1 p {
+        font-size: 2rem;
+    }
+
+    .cover3 h1 {
+        font-size: 2rem;
+    }
+
+    .cover3 .hash {
+        font-size: 9rem;
+    }
+
+    .cover2 p {
+        font-size: 0.8rem;
+        margin: 8px 0;
+    }
+}
 
 .prev,
 .next {
@@ -339,6 +360,7 @@ i.show_menu {
     height: inherit;
     position: absolute;
     top: 0;
+    background-color: rgba(88, 88, 88, .2);
     color: rgba(244, 244, 244, .9);
     z-index: 99;
     -webkit-transition: .45s;
@@ -358,7 +380,7 @@ i.show_menu {
 label span {
     position: relative;
     font-size: 100px;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -373,7 +395,7 @@ label span {
 
 .container #nav_slide {
     width: 100%;
-    bottom: 6%;
+    bottom: 12%;
     height: 11px;
     position: absolute;
     text-align: center;
@@ -439,29 +461,7 @@ label span {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        border: none;
-        width: 100%;
-    }
-
-    .slide_img h1 {
-        font-size: 2rem;
-        margin-top: 50px;
-    }
-
-    .cover1 h1 {
-        font-size: 1rem;
-    }
-
-    .slide_img p {
-        font-size: 1rem;
-        padding: 0 8px;
-    }
-
-    .saiba-mais  {
-        margin: 0 0 50px;
-    }
+@media screen and (max-width: 685px) {
 
     label span {
         font-size: 50pt;
@@ -475,24 +475,6 @@ label span {
     #nav_slide .dots {
         width: 12px;
         height: 12px;
-    }
-
-    #preciso {
-        font-size: 2rem;
-        margin-bottom: 5rem;
-        line-height: 2.5rem;
-        padding: 2px;
-    }
-
-    .pensamentos {
-        width: 90%;
-        margin: auto;
-        background-color: #D7D7D7;
-
-    }
-
-    .cover3 .hash {
-        font-size: 10rem;
     }
 }
 
@@ -534,18 +516,9 @@ label span {
     color: gray;
 }
 
-/*______________________________________________________________________________________________________________*/
-/*pagina causas sociais*/
+/*página Causas Sociais*/
 .causasSociais {
-    background-image: url(../imagens/Jesus.jpg)
-        /*capa*/
-    ;
-    background-color: #FFD477;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin: 0 auto;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -557,99 +530,95 @@ label span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(../imagens/Jesus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    overflow: hidden;
-    color: #fff;
-}
-
-.causasSociais h1 {
-    font-size: 4rem;
-    text-shadow: 4px 4px 4px black;
-    font-family: 'New Rocker', cursive;
 }
 
 .causasSociais p {
     font-size: 2rem;
-    text-shadow: 4px 4px 4px black;
-    font-family: 'Merriweather Sans', sans-serif;
-    width: 800px;
+    width: 70%;
+    margin: auto;
+    color: #fff;
+    margin-top: 150px;
+}
+
+@media screen and (max-width:768px) {
+    .causasSociais p {
+        font-size: 1.5rem;
+        width: 80%
+    }
+}
+
+@media screen and (max-width:640px) {
+    .causasSociais p {
+        font-size: 1.2rem;
+    }
 }
 
 .Matheus25 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 1200px;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: 5px solid brown;
+    margin: auto;
     background-color: #FFD477;
+    margin-top: 20px;
+    border: 5px solid brown;
+    border-radius: 30px;
 }
 
 .Matheus25 h2 {
-    font-size: 2rem;
-    color: #085BA9;
+    font-size: 2.5rem;
+    padding: 10px;
+    color: #1859A9;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-bottom: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .versiculos {
+    max-width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .versiculos ul {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-}
-
-.versiculos .border-left {
-    border-right: 2px solid brown;
+    margin: 10px;
+    padding: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
 }
 
 .versiculos ul li {
-    padding: 10px;
+    margin: 15px;
 }
 
-@media screen and (max-width:768px) {
-    .causasSociais h1 {
-        font-size: 2.2rem;
-        margin-top: 100px;
-    }
+.border-right {
+    border-right: 2px solid brown;
+}
 
-    .causasSociais p {
-        font-size: 0.9rem;
-        padding: 30px;
-        width: 400px;
-    }
-
-    .causasSociaisImg ul {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .Matheus25 {
-        margin: 10px;
-    }
-
-    .Matheus25 h2 {
-        font-size: 1.5rem;
-    }
-
+@media screen and (max-width:640px) {
     .versiculos {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -657,18 +626,22 @@ label span {
         flex-direction: column;
     }
 
+    .Matheus25 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .Matheus25 h2 {
+        font-size: 2rem;
+    }
+
     .versiculos ul {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        border-left: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .versiculos .border-left {
+    .border-right {
         border-right: none;
-    }
-
-    .versiculos ul li {
-        padding: 10px 0;
     }
 }
 
@@ -683,15 +656,21 @@ label span {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.causasSociaisImg h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #1859A9;
+    font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
+    font-weight: bold;
 }
-
-.causasSociaisImg img {
-    -webkit-box-shadow: 5px 5px 7px black;
-    box-shadow: 5px 5px 7px black;
-    border-radius: 15px;
-}
-
 
 .causasSociaisImg ul {
     display: -webkit-box;
@@ -699,45 +678,65 @@ label span {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
+}
+
+.causasSociaisImg img {
+    -webkit-box-shadow: 5px 5px 7px black;
+    box-shadow: 5px 5px 7px black;
+    border-radius: 10px;
 }
 
 .causasSociaisImg ul li {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 28%;
-    flex: 1 1 28%;
-    margin: 20px;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
+    margin: 10px;
     position: relative;
 }
 
 .causasSociaisImg a:hover {
     opacity: 0.7;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
-.causasSociaisImg h2 {
-    font-size: 2rem;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    color: #085BA9;
-}
-
-.causasSociaisImg h3 {
+.causasSociaisImg ul li h3 {
+    font-size: 0.9rem;
+    text-align: center;
     position: absolute;
     bottom: 4px;
     right: 0;
-    background: #085BA9;
+    background-color: #1859A9;
     color: #fff;
-    padding: 5px;
-    border-radius: 0 0 15px 0;
-    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 0;
 }
 
-@media (max-width:768px) {
-    .causasSociaisImg h2 {
-        font-size: 1.2rem;
+@media screen and (max-width:768px) {
+    .causasSociaisImg ul li {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+        flex: 1 1 40%;
     }
 
+    .causasSociaisImg h2 {
+        font-size: 1rem;
+        margin: 0px 40px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .causasSociaisImg ul li {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    }
+
+    .causasSociaisImg h2 {
+        font-size: 0.8rem;
+        padding: 20px 0;
+    }
 }
 
 /*página Sobre*/
@@ -779,6 +778,8 @@ label span {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
 }
 
 .sobre p {
@@ -805,6 +806,7 @@ label span {
 }
 
 /*página ações*/
+
 .acoes-body {
     background-image: url(../imagens/textura.jpg);
     background-repeat: no-repeat;
